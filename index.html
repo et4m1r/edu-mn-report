@@ -57,7 +57,11 @@
                 anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
                 menu: '#menu'
             });
-        });
+		});
+		
+		$('vismeIF').contents().find('#content').css({
+			'overflow-y': 'scroll'
+});
     </script>
 </head>
 
@@ -128,7 +132,13 @@
                 <iframe width="100%" height="90%" frameborder="0" scrolling="yes" style="overflow-y:hidden;" src="https://create.piktochart.com/embed/38233384-untitled-infographic"></iframe>
             </div>
             <div class="slide" style="background-color: #FFFFFF">
-					<iframe src="//my.visme.co/embed/76oj1qew-untitled-project" frameborder="0" scrolling="yes" style="overflow-y:scroll;" height="90%" width="100%"></iframe>
+					<iframe id="vismeIF" src="//my.visme.co/embed/76oj1qew-untitled-project" frameborder="0" scrolling="yes" style="overflow-y:scroll;" height="90%" width="100%"></iframe>
+					<script>
+							
+							$('vismeIF').contents().find('#content').css({
+								'overflow-y': 'scroll'
+					});
+						</script>
 			</div>
         </div>
         <!-- Reference -->
